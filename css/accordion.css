@@ -1,0 +1,17 @@
+.accordion {
+  height: 600px;
+  width: 100%;
+}
+
+.accordion .panel {
+  padding: 0;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+  background: yellow;
+}
+
+.accordion .panel img {
+  display: inline-block;
+  vertical-align: bottom;
+}
