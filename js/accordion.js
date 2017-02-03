@@ -1,9 +1,9 @@
 $(function () {
-  var $accordian = $('.accordion'),
-      $panel = $accordian.find('.panel'),
+  var $accordion = $('.accordion'),
+      $panel = $accordion.find('.panel'),
       panelCount = $panel.length,
       panelWidth = 100 / panelCount;
-      accordianWidth = $accordian.width(),
+      accordionWidth = $accordion.width(),
       animateSpeed = 400;
   $panel.css({'width': panelWidth+"%"});
   $panel.click(function () {
@@ -11,7 +11,7 @@ $(function () {
         $nonSelPanels = $panel.not($selPanel),
         $selImg = $selPanel.find('img'),
         selImgWidth = $selImg.width(),
-        nonSelPanelsWidth = (accordianWidth - selImgWidth) / (panelCount - 1);
+        nonSelPanelsWidth = (accordionWidth - selImgWidth) / (panelCount - 1);
     $nonSelPanels.animate({'width': nonSelPanelsWidth}, animateSpeed);
     $selPanel.animate({'width': selImgWidth}, animateSpeed);
   });

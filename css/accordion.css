@@ -1,5 +1,5 @@
 .accordion {
-  height: 600px;
+  height: 600px; /* Image height must match this setting. */
   width: 100%;
 }
 
